@@ -2,7 +2,11 @@
 
 Day to helper scripts.
 
-## Index 
-* `root`(https://mhumair.github.io/linux-academy/day_0/)
+## ROOT
 
+### switch to master_user
+* `for user in $(cat /etc/passwd | grep master | awk -F : '{print $1}'); do su $user; done`
+
+### webp
+* `apt install webp`
 
