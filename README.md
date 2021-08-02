@@ -121,6 +121,9 @@ chmod u+x /var/cw/systeam/helper.sh
 * `for i in ./*; do echo $i; find $i |wc -l; done`
 * `find /pathtodirectory/ -type f -mtime +1 -delete`
 
+## New Relic : 
+* `newrelic-install install`
+
 
 
 
