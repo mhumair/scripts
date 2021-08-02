@@ -117,6 +117,10 @@ remove jpeg,jpg,png, etc from app_db_name file in
 chmod u+x /var/cw/systeam/helper.sh
 /var/cw/systeam/helper.sh --help`
 
+## Inodes Clear : 
+* `for i in ./*; do echo $i; find $i |wc -l; done`
+* `find /pathtodirectory/ -type f -mtime +1 -delete`
+
 
 
 
