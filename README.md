@@ -124,6 +124,120 @@ chmod u+x /var/cw/systeam/helper.sh
 ## New Relic : 
 * `newrelic-install install`
 
+## Sed Search Replace : 
+* `grep -lr 'old_url' | xargs sed -i 's|old_url|new_url|g'`
 
+## htaccess html : 
+* `# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
+DirectoryIndex index.html`
+
+
+## Send Mail PHP Script : 
+* `<?php
+$to = "email@domain.com";
+$subject = "Testing";
+$txt = "Hello world!";
+mail($to,$subject,$txt,'From: email2@domain2.com  ');
+?>`
+
+## Get DB name from domain : 
+* `grep -r --include "*.nginx" danielsim.com .`
+
+## Cron Logs : 
+* `grep CRON /var/log/syslog | grep db`
+
+## Get Logs Backup fail : 
+* `cat /etc/sensu/plugins/data/backup_errors.json`
+
+## NGINX IP Deny : 
+* `location / {
+   deny 1.2.3.4;
+ }`
+
+## redirect 301 : 
+* `Redirect 301 http://abc.com http://xyz.com/mylink/`
+
+## get backup files : 
+* `/var/cw/scripts/bash/duplicity_restore.sh --src dbname -r --dst /home/fqdn.cloudwaysapps.com/dbname/tmp/ --time '2021-06-05T06:01:45'`
+
+## nodejs proxy enable : 
+* `a2enmod proxy*`
+
+## npm install package : 
+* `cd ~ && echo "alias svgo='/home/master/bin/npm/lib/node_modules/bin/svgo'" >> .bash_aliases
+cd ~ && echo "export PATH='$PATH:/home/master/bin/npm'" >> .bash_aliases
+cd ~ && echo "export NODE_PATH='$NODE_PATH:/home/master/bin/npm/lib/node_modules'" >> .bash_aliases
+npm config set prefix "/home/master/bin/npm/lib/node_modules"
+npm install -g svgo`
+
+## get backups list : 
+* `/var/cw/scripts/bash/duplicity_restore.sh --src nkctsgxvam -c`
+
+## backups permissions : 
+* `chmod -R u=rwX,g=rwX,o=rX mysql/`
+
+## backups change ownership : 
+* `chown -R master_wsyamvkjxk:www-data mysql/`
+
+## rsync : 
+* `rsync -avuz --progress`
+
+## scp : 
+* `scp -i private.key -P <portnumber> -r source_username@source_ip:/path/to/the/directory/ /destination/directory/`
+
+## sftp : 
+* `sftp -r source_username@source_ip:/source/directory/filename.tar.gz /destination/directory/`
+
+## ftp : 
+* `wget -m --source-user=xxxxxxx --source-password=xxxxxxx ftp://X.X.X.X/source-path-to-file/`
+
+## backups fact.d : 
+* `cat /etc/ansible/facts.d/backup.fact`
+
+## ssl dry run : 
+* `/usr/local/bin/letsencrypt-auto certonly --no-self-upgrade --dry-run --text --non-interactive --webroot -w /opt/letsencrypt/ -d www.abc.com -d abc.com --agree-tos`
+
+## find file : 
+* `find ./ -type f -name "*.htacess"`
+
+## composer update : 
+* `composer self-update 2.0.11`
+
+## extract tar gz : 
+* `tar -xzvf yourfile.tar.gz -C /dir`
+
+## New : 
+* `install`
+
+## New : 
+* `install`
+
+## New : 
+* `install`
+
+## New : 
+* `install`
+
+## New : 
+* `install`
+
+## New : 
+* `install`
+
+## New : 
+* `install`
+
+## New : 
+* `install`
+
+## New : 
+* `install`
 
 
