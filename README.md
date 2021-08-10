@@ -214,7 +214,9 @@ npm install -g svgo`
 * `tar -xzvf yourfile.tar.gz -C /dir`
 
 ## New : 
-* `install`
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A -l 10m; done`
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm mysql -s $A -l 10m; done`
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm php -s $A -l 10m; done`
 
 ## New : 
 * `install`
