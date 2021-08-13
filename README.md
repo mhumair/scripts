@@ -165,7 +165,7 @@ mail($to,$subject,$txt,'From: email2@domain2.com  ');
 * `Redirect 301 http://abc.com http://xyz.com/mylink/`
 
 ## get backup files : 
-* `/var/cw/scripts/bash/duplicity_restore.sh --src dbname -r --dst /home/fqdn.cloudwaysapps.com/dbname/tmp/ --time '2021-06-05T06:01:45'`
+* `/var/cw/scripts/bash/duplicity_restore.sh --src dbname -r --dst /home/master/applications/db/tmp/ --time '2021-06-05T'`
 
 ## nodejs proxy enable : 
 * `a2enmod proxy*`
