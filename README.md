@@ -45,13 +45,13 @@ remove jpeg,jpg,png, etc from app_db_name file in
 
 ## apm commands 
 
-* `apm -s appname traffic -l 25d`
+* `apm -s db traffic -l 25d`
 
-* `apm -s appname traffic -l 5m`
+* `apm -s db traffic -l 5m`
 
-* `apm -s appname traffic`
+* `apm -s db traffic`
 
-* `apm -s appname`
+* `apm -s db`
 
 ## Elastic Search
 
@@ -214,12 +214,12 @@ npm install -g svgo`
 * `tar -xzvf yourfile.tar.gz -C /dir`
 
 ## New : 
-*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A -l 10m; done`
-*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm mysql -s $A -l 10m; done`
-*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm php -s $A -l 10m; done`
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A -l 1d; done`
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm mysql -s $A -l 1d; done`
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm php -s $A -l 1d; done`
 
-## New : 
-* `install`
+## Find directory : 
+* `find ./ -type d -name 'files'`
 
 ## New : 
 * `install`
