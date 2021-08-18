@@ -221,17 +221,24 @@ npm install -g svgo`
 ## Find directory : 
 * `find ./ -type d -name 'files'`
 
-## New : 
-* `install`
+## Increase Swap Memory : 
+* `fallocate -l 1G /swapfile
+ls -lh /swapfile
+chmod 600 /swapfile
+ls -lh /swapfile
+mkswap /swapfile
+swapon /swapfile
+swapon --show
+free -h`
 
-## New : 
-* `install`
+## PHP Config details : 
+* `php-fpm7.4 -tt`
 
-## New : 
-* `install`
+## Increase Tmpfs Space : 
+* `mount -o remount,size=1G,noexec,nosuid,nodev,noatime /run`
 
-## New : 
-* `install`
+## Get Banned IP Addresses : 
+* `cat /var/log/fail2ban.log | grep banned`
 
 ## New : 
 * `install`
