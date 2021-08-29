@@ -241,8 +241,7 @@ free -h`
 * `cat /var/log/fail2ban.log | grep banned`
 
 ## Redirect all urls to a new domain : 
-* `
-    RewriteEngine On
+* `    RewriteEngine On
     RewriteCond %{HTTP_HOST} ^wordpress-647969-2125807.cloudwaysapps.com$ [OR]
     RewriteCond %{HTTP_HOST} ^test.humair.pk$
     RewriteRule (.*)$ http://test.humair.pk/$1 [R=301,L]
