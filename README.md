@@ -130,12 +130,12 @@ chmod u+x /var/cw/systeam/helper.sh
 ## htaccess html : 
 * `# BEGIN WordPress
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
-</IfModule>
+RewriteEngine On  
+RewriteBase /  
+RewriteCond %{REQUEST_FILENAME} !-f  
+RewriteCond %{REQUEST_FILENAME} !-d  
+RewriteRule . /index.html [L]  
+</IfModule>  
 DirectoryIndex index.html`
 
 
@@ -241,9 +241,9 @@ free -h`
 * `cat /var/log/fail2ban.log | grep banned`
 
 ## Redirect all urls to a new domain : 
-* `RewriteEngine On
-RewriteCond %{HTTP_HOST} ^wordpress-647969-2125807.cloudwaysapps.com$ [OR]
-RewriteCond %{HTTP_HOST} ^test.humair.pk$
+* `RewriteEngine On  
+RewriteCond %{HTTP_HOST} ^wordpress-647969-2125807.cloudwaysapps.com$ [OR]  
+RewriteCond %{HTTP_HOST} ^test.humair.pk$  
 RewriteRule (.*)$ http://test.humair.pk/$1 [R=301,L]`
 
 ## New : 
