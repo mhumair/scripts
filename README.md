@@ -247,8 +247,8 @@ free -h`
     RewriteRule (.*)$ http://test.humair.pk/$1 [R=301,L]
 `
 
-## New : 
-* `install`
+## Composer : 
+* `composer self-update --v`
 
 ## New : 
 * `install`
