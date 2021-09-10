@@ -250,6 +250,10 @@ free -h`
 ## Composer : 
 * `composer self-update --v`
 
+## Redis : 
+* `redis-cli config set "save" ""`
+   `redis-cli config rewrite `
+
 ## New : 
 * `install`
 
