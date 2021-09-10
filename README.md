@@ -43,7 +43,7 @@ remove jpeg,jpg,png, etc from app_db_name file in
 
 * `for A in $(ls -la | awk '{print $NF}'); do echo $A && awk '{print $1,$7}' $A/logs/apache_*.access.log | cut -d? -f1 | sort | uniq -c |sort -nr | head -n 5 | awk -F";" '{print $1}' ; done`
 
-## apm commands 
+## APM commands 
 
 * `apm -s db traffic -l 25d`
 
@@ -52,6 +52,10 @@ remove jpeg,jpg,png, etc from app_db_name file in
 * `apm -s db traffic`
 
 * `apm -s db`
+
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A -l 1d; done`
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm mysql -s $A -l 1d; done`
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm php -s $A -l 1d; done`
 
 ## Elastic Search
 
@@ -212,11 +216,6 @@ npm install -g svgo`
 
 ## extract tar gz : 
 * `tar -xzvf yourfile.tar.gz -C /dir`
-
-## New : 
-*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A -l 1d; done`
-*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm mysql -s $A -l 1d; done`
-*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm php -s $A -l 1d; done`
 
 ## Find directory : 
 * `find ./ -type d -name 'files'`
