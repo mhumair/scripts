@@ -251,7 +251,7 @@ free -h`
 
 ## Redis : 
 * `redis-cli config set "save" ""`
-   `redis-cli config rewrite `
+*  `redis-cli config rewrite `
 
 ## New : 
 * `install`
