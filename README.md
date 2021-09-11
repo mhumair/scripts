@@ -15,7 +15,7 @@ Day to helper scripts.
 
 ### Exclude extensions : 
 
-remove jpeg,jpg,png, etc from app_db_name file in 
+### remove jpeg,jpg,png, etc from app_db_name file in 
 
 * `/etc/nginx/sites-enabled/`
 
