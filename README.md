@@ -191,7 +191,7 @@ npm install -g svgo`
 * `chown -R master_wsyamvkjxk:www-data mysql/`
 
 ## rsync : 
-* `rsync -avuz --progress`
+* `rsync -azrvh`
 
 ## scp : 
 * `scp -i private.key -P <portnumber> -r source_username@source_ip:/path/to/the/directory/ /destination/directory/`
