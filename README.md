@@ -253,6 +253,9 @@ free -h`
 * `redis-cli config set "save" ""`
 *  `redis-cli config rewrite `
 
+## Take Dump Of All Databases : 
+* `for A in $(ls | awk '{print $NF}'); do mysqldump $A > /home/master/$A; done`
+
 ## New : 
 * `install`
 
