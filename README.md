@@ -256,6 +256,11 @@ free -h`
 ## Take Dump Of All Databases : 
 * `for A in $(ls | awk '{print $NF}'); do mysqldump $A > /home/master/$A; done`
 
+## size : 
+* `ls -l --block-size=M`
+
+
+
 ## New : 
 * `install`
 
