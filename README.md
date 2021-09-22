@@ -256,10 +256,11 @@ free -h`
 ## Take Dump Of All Databases : 
 * `for A in $(ls | awk '{print $NF}'); do mysqldump $A > /home/master/$A; done`
 
+## Restore Dump Of All Database : 
+* `for i in $(ls -l | grep '^d' | awk '{print $9}'); do echo "Dropping $i"; echo "Y" | mysqladmin drop $i; echo "Creating $i"; mysqladmin create $i;echo "Importing $i" ;mysql $i < /home/master/db/$i.sql;done`
+
 ## size : 
 * `ls -l --block-size=M`
-
-
 
 ## New : 
 * `install`
