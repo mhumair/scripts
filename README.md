@@ -53,6 +53,8 @@ Day to helper scripts.
 
 * `apm -s db`
 
+* `apm traffic -s bjutydjmkf -f 22/09/2021:12:00 -u 22/09/2021:14:00`
+
 *  `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A -l 1d; done`
 *  `for A in $(ls | awk '{print $NF}'); do echo $A && apm mysql -s $A -l 1d; done`
 *  `for A in $(ls | awk '{print $NF}'); do echo $A && apm php -s $A -l 1d; done`
