@@ -58,7 +58,7 @@ Day to helper scripts.
 *  `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A -l 1d; done`
 *  `for A in $(ls | awk '{print $NF}'); do echo $A && apm mysql -s $A -l 1d; done`
 *  `for A in $(ls | awk '{print $NF}'); do echo $A && apm php -s $A -l 1d; done`
-*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A -f 22/09/2021:12:00 -u 22/09/2021:14:00 -l 1d; done`
+*  `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A -f 22/09/2021:12:00 -u 22/09/2021:14:00; done`
 
 ## Elastic Search
 
