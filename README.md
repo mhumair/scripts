@@ -270,6 +270,9 @@ free -h`
 ## size : 
 * `ls -l --block-size=M`
 
+## disk space : 
+* `du -shc /* 2>/dev/null | sort -rh`
+
 ## New : 
 * `install`
 
