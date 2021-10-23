@@ -273,6 +273,11 @@ free -h`
 ## disk space : 
 * `du -shc /* 2>/dev/null | sort -rh`
 
+## Get DB Backups from Upstream : 
+
+* `cp /var/cw/scripts/bash/duplicity_restore.sh /var/cw/systeam && cd /var/cw/systeam && sed -i '192,199d;209,211d' duplicity_restore.sh`
+* `for A in $(ls | awk '{print $NF}'); do echo $A && mkdir /home/master/db_backups/$A && /var/cw/systeam/duplicity_restore.sh --src $A -r --dst /home/master/db_backups/$A --time '2021-10-22' && echo "DONE" ; done`
+
 ## New : 
 * `install`
 
