@@ -209,7 +209,7 @@ npm install -g svgo`
 * `cat /etc/ansible/facts.d/backup.fact`
 
 ## ssl dry run : 
-* `/usr/local/bin/letsencrypt-auto certonly --no-self-upgrade --dry-run --text --non-interactive --webroot -w /opt/letsencrypt/ -d www.abc.com -d abc.com --agree-tos`
+* `/usr/local/bin/letsencrypt-auto certonly --no-self-upgrade --dry-run --text --non-interactive --webroot -w /opt/letsencrypt/ -d www -d --agree-tos`
 
 ## find file : 
 * `find ./ -type f -name "*.htacess"`
