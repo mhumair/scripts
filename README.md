@@ -47,6 +47,8 @@ Day to helper scripts.
 
 * `apm -s db traffic -l 25d`
 
+* `for A in $(ls | awk '{print $NF}'); do echo $A && apm traffic -s $A --ip 201.234.213.50 -l 1h; done`
+
 * `apm -s db traffic -l 5m`
 
 * `apm -s db traffic`
